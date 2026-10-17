@@ -53,7 +53,7 @@ Die Website wird mit HTML, CSS und JavaScript umgesetzt und über GitHub verwalt
 
 **Datei- und Ordnerstruktur**
 
-- HTML-Dateien für die vier geplanten Seiten angelegt
+- HTML-Dateien für die vier geplanten Seiten angelegt #Test
 - Ordner `css`, `js` und `data` erstellt
 - CSS-Datei in den Ordner `css` verschoben
 - JavaScript-Datei in den Ordner `js` verschoben
