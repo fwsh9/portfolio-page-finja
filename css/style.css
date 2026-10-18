@@ -19,3 +19,32 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+
+/*Einheitliche Gestaltung der Bereiche */
+main section {
+  padding: 80px 24px;
+}
+
+/*Willkommensblock: Petrol */
+.welcome {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Nächster offizieller Lauf: Beige */
+.next-race {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/*Letzte Läufe: Salbeigrün */
+.recent-runs {
+  background-color: var(--color-sage);
+  color: var(--color-text);
+}
+
+/* Gemeinsam Laufen: Beige */
+.running-together {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
