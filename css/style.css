@@ -73,10 +73,10 @@ main section {
   text-decoration: none;
 }
 
-site.header nav {
+.site.header nav {
   display: flex;
   gap: 24px;
-  flex-wrap: wrap,
+  flex-wrap: wrap;
 }
 
 .site-header nav a {
@@ -87,7 +87,7 @@ site.header nav {
 
 .site-header nav a:hover,
 .site-header nav a[aria-current="page"] {
-  color: var(--color-primary);
+  color: var(--color-white);
   text-decoration: underline;
   text-underline-offset: 6px;
 }
