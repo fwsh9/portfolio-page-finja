@@ -73,7 +73,7 @@ main section {
   text-decoration: none;
 }
 
-.site.header nav {
+.site-header nav {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
