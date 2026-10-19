@@ -40,7 +40,7 @@ main section {
 /*Letzte Läufe: Salbeigrün */
 .recent-runs {
   background-color: var(--color-primary);
-  color: var(--color-text);
+  color: var(--color-white);
 }
 
 /* Gemeinsam Laufen: Beige */
@@ -50,7 +50,7 @@ main section {
 }
 
 
-/* Naigation */
+/* Navigation */
 .site-header {
   background-color: var(--color-background);
 }
@@ -90,4 +90,29 @@ site.header nav {
   color: var(--color-primary);
   text-decoration: underline;
   text-underline-offset: 6px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-brand {
+  font-weight: bold
 }
