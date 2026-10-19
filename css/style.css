@@ -52,11 +52,11 @@ main section {
 
 /* Navigation */
 .site-header {
-  background-color: var(--color-background);
+  background-color: var(--color-primary);
 }
 
 .header-content {
-  max-width: 120px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 24px;
   display: flex;
@@ -67,7 +67,7 @@ main section {
 }
 
 .site-logo {
-  color: var(--color-primary);
+  color: #ffffff;
   font-size: 1.25rem;
   font-weight: bold;
   text-decoration: none;
@@ -80,7 +80,7 @@ site.header nav {
 }
 
 .site-header nav a {
-  color: var(--color-text);
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
 }
