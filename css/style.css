@@ -87,7 +87,7 @@ main section {
 
 .site-header nav a:hover,
 .site-header nav a[aria-current="page"] {
-  color: var(--color-white);
+  color: #ffffff;
   text-decoration: underline;
   text-underline-offset: 6px;
 }
