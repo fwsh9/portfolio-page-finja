@@ -39,7 +39,7 @@ main section {
 
 /*Letzte Läufe: Salbeigrün */
 .recent-runs {
-  background-color: var(--color-sage);
+  background-color: var(--color-primary);
   color: var(--color-text);
 }
 
