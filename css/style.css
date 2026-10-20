@@ -239,11 +239,11 @@ textarea:focus-visible {
 
 /* Einzelne Laufkart */
 .run-card {
-  background-color: var(--color-primary);
-  color: var(--color-background);
+  background-color: var(--color-background);
+  color: var(--color-primary);
   padding: 28px;
   border-radius: 14px;
-  border: 1px solid var(--color-primary);
+  border: 1px solid #e5e5e5;
 }
 
 .run-card h3 {
