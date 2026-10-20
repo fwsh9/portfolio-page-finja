@@ -228,7 +228,6 @@ textarea:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
-  max-width: 1200px;
   margin: 32px auto;
 }
 
@@ -244,12 +243,30 @@ textarea:focus-visible {
   color: var(--color-background);
   padding: 28px;
   border-radius: 14px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--color-primary);
 }
 
 .run-card h3 {
   color: var(--color-primary);
-  margin-top: 0;
+  margin-top: 0 0 8px;
+}
+
+.run-date {
+  color: var(--color-primary);
+  margin: 0 0 24px;
+}
+
+.run-distance {
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 16px;
+}
+
+@media (max-width: 800px) {
+  #recent-runs-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Link unter den Karten */
