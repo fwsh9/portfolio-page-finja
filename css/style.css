@@ -49,16 +49,15 @@ main section {
   color: var(--color-text);
 }
 
-
 /* Navigation */
 .site-header {
   background-color: var(--color-primary);
 }
 
 .header-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 24px;
+  max-width: 100%;
+  margin: 0;
+  padding: 24px clamp(16px, 3vw, 48px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,7 +113,7 @@ main section {
 }
 
 .footer-brand {
-  font-weight: bold
+  font-weight: bold;
 }
 
 /* Sichtbarer Tastaturfokus */
@@ -126,7 +125,7 @@ textarea:focus-visible {
   outline-offset: 4px;
 }
 
-/* Anpassung für Smartphone */ 
+/* Anpassung für Smartphone */
 @media (max-width: 600px) {
   .header-content {
     flex-direction: column;
