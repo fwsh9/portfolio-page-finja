@@ -226,16 +226,22 @@ textarea:focus-visible {
 /* Letzte drei Läufe */
 #recent-runs-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
   max-width: 1200px;
   margin: 32px auto;
 }
 
+@media (max-width: 800px) {
+  #recent-runs-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Einzelne Laufkart */
 .run-card {
   background-color: var(--color-primary);
-  color: var(--color-text);
+  color: var(--color-background);
   padding: 28px;
   border-radius: 14px;
   border: 1px solid #e5e5e5;
