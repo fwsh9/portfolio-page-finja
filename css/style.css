@@ -234,7 +234,7 @@ textarea:focus-visible {
 
 /* Einzelne Laufkart */
 .run-card {
-  background-color: var(--color-background);
+  background-color: var(--color-primary);
   color: var(--color-text);
   padding: 28px;
   border-radius: 14px;
@@ -255,7 +255,7 @@ textarea:focus-visible {
 .progress-link a {
   display: inline-block;
   color: var(--color-background);
-  border: 1px solid var(--color-background);
+  border: 1px solid var(--color-primary);
   padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
