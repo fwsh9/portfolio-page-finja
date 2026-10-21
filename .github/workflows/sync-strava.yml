@@ -1,0 +1,56 @@
+name: Strava Läufe synchronoisieren
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 ***"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: strava-sync
+  cancel-in-progress: false
+
+jobs: 
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      
+      - name: Strava-Daten abrufen
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+        run: python data/sync_strava.py
+
+      - name: Refresh Token aktualisieren
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ secrets.STRAVA_SECRET_ADMIN_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          if [ -s /tmp/strava_refresh_token ]; then
+            gh secret set STRAVA_REFRESH_TOKEN \
+              --repo "$GH_REPO" \
+              < /tmp/strava_refresh_token
+            echo "Refresh Token erfolgreich aktualisiert."
+          else
+            echo "Kein neuer Refresh Token vorhanden."
+          fi
+
+      - name: Laufdaten speichern
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/activities.json
+          git diff --cached --quiet || git commit-m"Update Strava activities"
+          git push
