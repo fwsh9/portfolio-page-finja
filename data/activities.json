@@ -1,16 +1,138 @@
 [
   {
-    "name": "Easy Run",
-    "date": "2026-10-16",
-    "distance": 5.2,
-    "duration": 1980,
+    "id": 20657464142,
+    "name": "Abendlauf",
+    "date": "2026-09-20",
+    "distance": 16.03,
+    "duration": 6528,
     "type": "Run"
   },
   {
-    "name": "Long Run",
-    "date": "2026-10-11",
-    "distance": 12.0,
-    "duration": 4500,
+    "id": 20657464008,
+    "name": "Abendlauf",
+    "date": "2026-09-10",
+    "distance": 0.88,
+    "duration": 264,
+    "type": "Run"
+  },
+  {
+    "id": 20657464036,
+    "name": "Abendlauf",
+    "date": "2026-09-10",
+    "distance": 3.17,
+    "duration": 1258,
+    "type": "Run"
+  },
+  {
+    "id": 20657458899,
+    "name": "Abendlauf",
+    "date": "2026-08-24",
+    "distance": 12.15,
+    "duration": 4719,
+    "type": "Run"
+  },
+  {
+    "id": 20657458883,
+    "name": "Lauf am Nachmittag",
+    "date": "2026-08-22",
+    "distance": 7.0,
+    "duration": 2491,
+    "type": "Run"
+  },
+  {
+    "id": 20657458889,
+    "name": "Lauf am Morgen",
+    "date": "2026-08-20",
+    "distance": 6.29,
+    "duration": 2431,
+    "type": "Run"
+  },
+  {
+    "id": 20657458828,
+    "name": "Lauf am Morgen",
+    "date": "2026-07-14",
+    "distance": 6.57,
+    "duration": 3013,
+    "type": "Run"
+  },
+  {
+    "id": 20657458835,
+    "name": "Abendlauf",
+    "date": "2026-07-12",
+    "distance": 12.1,
+    "duration": 6242,
+    "type": "Run"
+  },
+  {
+    "id": 20657458829,
+    "name": "Nachtlauf",
+    "date": "2026-06-22",
+    "distance": 4.17,
+    "duration": 1320,
+    "type": "Run"
+  },
+  {
+    "id": 20657458789,
+    "name": "Lauf am Nachmittag",
+    "date": "2026-05-30",
+    "distance": 8.25,
+    "duration": 2776,
+    "type": "Run"
+  },
+  {
+    "id": 20657458791,
+    "name": "Lauf am Morgen",
+    "date": "2026-05-25",
+    "distance": 7.55,
+    "duration": 3534,
+    "type": "Run"
+  },
+  {
+    "id": 20657458795,
+    "name": "Mittagslauf",
+    "date": "2026-05-23",
+    "distance": 8.72,
+    "duration": 4260,
+    "type": "Run"
+  },
+  {
+    "id": 20657458717,
+    "name": "Abendlauf",
+    "date": "2026-05-04",
+    "distance": 5.25,
+    "duration": 1680,
+    "type": "Run"
+  },
+  {
+    "id": 20657458658,
+    "name": "Lauf am Nachmittag",
+    "date": "2026-04-25",
+    "distance": 10.34,
+    "duration": 4336,
+    "type": "Run"
+  },
+  {
+    "id": 20657458605,
+    "name": "Abendlauf",
+    "date": "2026-04-07",
+    "distance": 4.02,
+    "duration": 1675,
+    "type": "Run"
+  },
+  {
+    "id": 20657458719,
+    "name": "Abendlauf",
+    "date": "2026-04-06",
+    "distance": 5.07,
+    "duration": 1856,
+    "type": "Run"
+  },
+  {
+    "id": 20657458593,
+    "name": "Lauf am Morgen",
+    "date": "2026-04-05",
+    "distance": 1.92,
+    "duration": 636,
     "type": "Run"
   }
 ]
