@@ -1,8 +1,8 @@
-
 import os
 import json
 import urllib.parse
 import urllib.request
+import urllib.error
 
 # Zugangsdaten aus GitHub Secrets lesen
 client_id = os.environ["STRAVA_CLIENT_ID"]
@@ -23,8 +23,14 @@ token_request = urllib.request.Request(
     method="POST"
 )
 
-with urllib.request.urlopen(token_request) as response:
-    tokens = json.load(response)
+try:
+    with urllib.request.urlopen(token_request) as response:
+        tokens = json.load(response)
+
+except urllib.error.HTTPError as error:
+    print(f"Strava Authentifizierung fehlgeschlagen: HTTP {error.code}")
+    print("Bitte Client ID, Clientschlüssel und Refresh Token prüfen.")
+    raise SystemExit(1)
 
 access_token = tokens["access_token"]
 
