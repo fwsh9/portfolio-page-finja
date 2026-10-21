@@ -7,7 +7,7 @@ from datetime import datetime
 # 1. Zugangsdaten zu GitHub Secrets lesen
 client_id = os.environ["STRAVA_CLIENT_ID"]
 client_secret = os.environ["STRAVA_CLIENT_SECRET"]
-refresh_token 0 os.environ["STRAVA_REFRESH_TOKEN"]
+refresh_token = os.environ["STRAVA_REFRESH_TOKEN"]
 
 # 2. Access Token bei Strava anfordern
 token_data = urllib.parse.urlencode({
