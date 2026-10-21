@@ -61,7 +61,7 @@ runs = []
 
 for activity in activities:
     if activity.get("sport_type", activity.get("type")) != "Run":
-    continue
+        continue
 
     distance_km = activity["distance"] / 1000
     moving_seconds = activity["moving_time"]
