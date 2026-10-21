@@ -1,0 +1,66 @@
+
+name: Strava autorisieren
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  authorize:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Python einrichten
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Autorisierungscode austauschen
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_AUTH_CODE: ${{ secrets.STRAVA_AUTH_CODE }}
+          GH_TOKEN: ${{ secrets.STRAVA_SECRET_ADMIN_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          python - <<'PY'
+          import os
+          import json
+          import subprocess
+          import urllib.parse
+          import urllib.request
+
+          data = urllib.parse.urlencode({
+              "client_id": os.environ["STRAVA_CLIENT_ID"],
+              "client_secret": os.environ["STRAVA_CLIENT_SECRET"],
+              "code": os.environ["STRAVA_AUTH_CODE"],
+              "grant_type": "authorization_code"
+          }).encode("utf-8")
+
+          request = urllib.request.Request(
+              "https://www.strava.com/oauth/token",
+              data=data,
+              method="POST"
+          )
+
+          with urllib.request.urlopen(request) as response:
+              tokens = json.load(response)
+
+          refresh_token = tokens["refresh_token"]
+
+          subprocess.run(
+              [
+                  "gh", "secret", "set",
+                  "STRAVA_REFRESH_TOKEN",
+                  "--repo", os.environ["GH_REPO"]
+              ],
+              input=refresh_token,
+              text=True,
+              check=True
+          )
+
+          print("Strava-Autorisierung erfolgreich.")
+          print("Neuer Refresh Token sicher in GitHub gespeichert.")
+          PY
