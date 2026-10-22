@@ -25,6 +25,10 @@ main section {
   padding: 80px 24px;
 }
 
+.progress.page section {
+  padding: 40px 24px;
+}
+
 /*Willkommensblock: Petrol */
 .welcome {
   background-color: var(--color-primary);
@@ -119,7 +123,7 @@ main section {
 /* Sichtbarer Tastaturfokus */
 a:focus-visible,
 button:focus-visible,
-input:foucus-visible,
+input:focus-visible,
 textarea:focus-visible {
   outline: 3px solid #9cb9a5;
   outline-offset: 4px;
@@ -248,7 +252,7 @@ textarea:focus-visible {
 
 .run-card h3 {
   color: var(--color-primary);
-  margin-top: 0 0 8px;
+  margin: 0 0 8px;
 }
 
 .run-date {
@@ -293,5 +297,23 @@ textarea:focus-visible {
 @media (max-width: 800px) {
   #recent-runs-list {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Platz für Diagramme */
+#distance-chart,
+#pace-chart {
+  min-height: 300px;
+}
+
+/* Responsive Darstellung */
+@media (max-width: 768px) {
+  .progress-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .start-card,
+  .chard-card {
+    padding: 24px;
   }
 }
