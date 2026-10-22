@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Startseite | Mein Running Tagebuch</title>
+    <title>Progress | Mein Running Tagebuch</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body> 
-        <!-- Header und Navigation -->
+  <body>
+    <!-- Header und Navigation -->
     <header class="site-header">
       <div class="header-content">
         <a class="site-logo" href="index.html"> Mein Lauftagebuch </a>
@@ -16,13 +16,49 @@
         <nav aria-label="Hauptnavigation">
           <a href="index.html">Home</a>
           <a href="progress.html" aria-current="page">Progress</a>
-          <a href="training.html">Traning</a>
+          <a href="training.html">Training</a>
           <a href="races.html">Races</a>
         </nav>
       </div>
     </header>
 
-        <!--Footer-->
+    <main class="progress-page">
+      <section class="progress-intro">
+        <h1>Meine Laufhistorie</h1>
+        <p>Alle Läufe. Hoffentlich mit Fortschritt...</p>
+      </section>
+
+      <section class="progress-stats" aria-label="Laufstatistiken">
+        <article class="start-card">
+          <h2>Gesamtdistanz</h2>
+          <p id="total-distance">- km</p>
+        </article>
+
+        <article class="start-card">
+          <h2>Anzahl Läufe</h2>
+          <p id="total-runs">-</p>
+        </article>
+
+        <article class="start-card">
+          <h2>Ø Distanz pro Lauf</h2>
+          <p id="average-distance">- km</p>
+        </article>
+      </section>
+
+      <section class="progress-charts">
+        <article class="chart-card">
+          <h2>Gelaufene Kilometer</h2>
+          <div id="distance-chart"></div>
+        </article>
+
+        <article class="chart-card">
+          <h2>Pace-Entwicklung</h2>
+          <div id="pace-chart"></div>
+        </article>
+      </section>
+    </main>
+
+    <!--Footer-->
     <footer class="site-footer">
       <div class="footer-content">
         <p class="footer-brand">MEIN LAUFTAGEBUCH</p>
@@ -32,6 +68,5 @@
 
     <!--Javasript-->
     <script src="js/script.js"></script>
-
   </body>
-    
+</html>
