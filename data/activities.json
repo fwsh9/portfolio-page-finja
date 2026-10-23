@@ -1,23 +1,23 @@
 [
   {
+    "id": 20688092593,
+    "name": "Laufband",
+    "date": "2026-10-22",
+    "distance": 4.52,
+    "duration": 2954,
+    "type": "Run"
+  },
+  {
     "id": 20657464142,
-    "name": "Abendlauf",
+    "name": "Long Run",
     "date": "2026-09-20",
     "distance": 16.03,
     "duration": 6528,
     "type": "Run"
   },
   {
-    "id": 20657464008,
-    "name": "Abendlauf",
-    "date": "2026-09-10",
-    "distance": 0.88,
-    "duration": 264,
-    "type": "Run"
-  },
-  {
     "id": 20657464036,
-    "name": "Abendlauf",
+    "name": "Intervalle",
     "date": "2026-09-10",
     "distance": 3.17,
     "duration": 1258,
@@ -25,7 +25,7 @@
   },
   {
     "id": 20657458899,
-    "name": "Abendlauf",
+    "name": "Long Run",
     "date": "2026-08-24",
     "distance": 12.15,
     "duration": 4719,
@@ -33,7 +33,7 @@
   },
   {
     "id": 20657458883,
-    "name": "Lauf am Nachmittag",
+    "name": "Easy Run",
     "date": "2026-08-22",
     "distance": 7.0,
     "duration": 2491,
@@ -41,7 +41,7 @@
   },
   {
     "id": 20657458889,
-    "name": "Lauf am Morgen",
+    "name": "Easy Run",
     "date": "2026-08-20",
     "distance": 6.29,
     "duration": 2431,
@@ -49,7 +49,7 @@
   },
   {
     "id": 20657458828,
-    "name": "Lauf am Morgen",
+    "name": "Easy Run",
     "date": "2026-07-14",
     "distance": 6.57,
     "duration": 3013,
@@ -57,7 +57,7 @@
   },
   {
     "id": 20657458835,
-    "name": "Abendlauf",
+    "name": "Long Run",
     "date": "2026-07-12",
     "distance": 12.1,
     "duration": 6242,
@@ -65,7 +65,7 @@
   },
   {
     "id": 20657458829,
-    "name": "Nachtlauf",
+    "name": "Easy Run",
     "date": "2026-06-22",
     "distance": 4.17,
     "duration": 1320,
@@ -73,7 +73,7 @@
   },
   {
     "id": 20657458789,
-    "name": "Lauf am Nachmittag",
+    "name": "Easy Run",
     "date": "2026-05-30",
     "distance": 8.25,
     "duration": 2776,
@@ -81,7 +81,7 @@
   },
   {
     "id": 20657458791,
-    "name": "Lauf am Morgen",
+    "name": "Easy Run",
     "date": "2026-05-25",
     "distance": 7.55,
     "duration": 3534,
@@ -97,7 +97,7 @@
   },
   {
     "id": 20657458717,
-    "name": "Abendlauf",
+    "name": "Easy Run",
     "date": "2026-05-04",
     "distance": 5.25,
     "duration": 1680,
