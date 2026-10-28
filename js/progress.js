@@ -28,7 +28,7 @@ async function loadProgress() {
     const formatDistance = (value) =>
       `${value.toLocaleString("de-CH", {
         minimumFractionDigits: 2,
-        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
       })} km`;
 
     // Berechnete Werte in die HTML-Karten einfügen
@@ -157,7 +157,7 @@ function displayAllRuns(runs) {
     const card = document.createElement("article");
     card.className = "run-card";
 
-    const title = doocument.reateElement("h3");
+    const title = document.createElement("h3");
     title.textContent = run.name;
 
     const date = document.createElement("p");
