@@ -1,7 +1,7 @@
 async function loadProgress() {
   try {
     //Laufdaten aus der JSON-Datei laden
-    const response = await fetch("data.activities.json");
+    const response = await fetch("data/activities.json");
 
     if (!response.ok) {
       throw new Error("Laufdaten konnten nicht geladen werden.");
