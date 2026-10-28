@@ -43,7 +43,10 @@ async function loadProgress() {
 
     //Kilomterdiagramm erstellen
     createDistanceChart(runs);
-    
+
+    // Alle Läufe als Karten anzeigen
+    displayAllRuns(runs);
+
   } catch (error) {
     console.error("Fehler beim Laedn der Laufstatistiken:", error);
   }
@@ -118,6 +121,73 @@ function createDistanceChart(runs) {
         }
       }
     }
+  });
+}
+
+function diyplayAllRuns(runs) {
+  const container = document.getElementById("all-runs-list");
+
+  // Bisherigen Inhalt entfernen
+  container.replaceChildren();
+
+  //Neueste Läufe zuerst anzeigen
+  const sortedRuns = [...runs].sort(
+    (a, b) => b.date.localeCompare(a.date)
+  );
+
+  // Hinweis, falls keine Läufe vorhanden sind
+  if (sortedRuns.length === 0) {
+    container.textContent = "Noch keine Läufe vorhanden.";
+    return;
+  }
+
+
+  sortedRuns.forEach((run) => {
+    const distance = Number(run.distance);
+    const duration = Number(run.duration);
+
+    // Pace in Minuten pro Kilometer berechnen
+    const paceSeconds = Math.round(duration / distance);
+    const paceMinutes = Math.floor(paceSeconds / 60);
+    const paceRemainingSeconds = String(
+      paceSeconds % 60
+    ).padStart(2, "0");
+
+    // Laufkarte erstellen
+    const card = document.createElement("article");
+    card.className = "run-card";
+
+    const title = doocument.reateElement("h3");
+    title.textContent = run.name;
+
+    const date = document.createElement("p");
+    date.className = "run-date";
+    date.textContent = new Date(
+      `${run.date}T12:00:00`
+    ).toLocaleDateString("de-CH");
+
+    const distanceElement = document.createElement("p");
+    distanceElement.className = "run-distance";
+    distanceElement.textContent =
+      `${distance.toFixed(2)} km`;
+
+    const durationElement = document.createElement("p");
+    durationElement.textContent = 
+      `Dauer: ${Math.floor(duration / 60)} Min.`;
+    
+    const paceElement = document.createElement("p");
+    paceElement.textContent = 
+      `Pace: ${paceMinutes}:${paceRemainingSeconds} min/km`;
+
+    card.append(
+      title,
+      date,
+      distanceElement,
+      durationElement,
+      paceElement
+    );
+
+    container.appendChild(card);
   });
 }
 
