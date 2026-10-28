@@ -296,6 +296,14 @@
     "type": "Run"
   },
   {
+    "id": 20616990763,
+    "name": "Hamburg Marathon",
+    "date": "2025-04-27",
+    "distance": 43.24,
+    "duration": 18461,
+    "type": "Run"
+  },
+  {
     "id": 20616990326,
     "name": "Abendlauf",
     "date": "2025-04-26",
