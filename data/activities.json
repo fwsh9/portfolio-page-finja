@@ -1,10 +1,42 @@
 [
   {
+    "id": 20765476744,
+    "name": "Swiss City Halbmarathon Luzern",
+    "date": "2026-10-25",
+    "distance": 21.1,
+    "duration": 8458,
+    "type": "Run"
+  },
+  {
     "id": 20688092593,
     "name": "Laufband",
     "date": "2026-10-22",
     "distance": 4.52,
     "duration": 2954,
+    "type": "Run"
+  },
+  {
+    "id": 20765445918,
+    "name": "Laufband",
+    "date": "2026-10-21",
+    "distance": 6.94,
+    "duration": 2867,
+    "type": "Run"
+  },
+  {
+    "id": 20765440617,
+    "name": "Laufband",
+    "date": "2026-10-20",
+    "distance": 5.13,
+    "duration": 1893,
+    "type": "Run"
+  },
+  {
+    "id": 20765434865,
+    "name": "Laufband",
+    "date": "2026-10-18",
+    "distance": 5.59,
+    "duration": 3010,
     "type": "Run"
   },
   {
@@ -128,11 +160,291 @@
     "type": "Run"
   },
   {
-    "id": 20657458593,
+    "id": 20617009185,
+    "name": "Lauf am Nachmittag",
+    "date": "2026-01-22",
+    "distance": 6.07,
+    "duration": 2105,
+    "type": "Run"
+  },
+  {
+    "id": 20617009173,
+    "name": "Mittagslauf",
+    "date": "2025-12-23",
+    "distance": 7.29,
+    "duration": 2388,
+    "type": "Run"
+  },
+  {
+    "id": 20617009111,
+    "name": "Lauf am Nachmittag",
+    "date": "2025-12-13",
+    "distance": 6.94,
+    "duration": 2116,
+    "type": "Run"
+  },
+  {
+    "id": 20617009040,
+    "name": "Lauf am Nachmittag",
+    "date": "2025-12-06",
+    "distance": 8.57,
+    "duration": 2644,
+    "type": "Run"
+  },
+  {
+    "id": 20617009180,
     "name": "Lauf am Morgen",
-    "date": "2026-04-05",
-    "distance": 1.92,
-    "duration": 636,
+    "date": "2025-10-19",
+    "distance": 21.9,
+    "duration": 9708,
+    "type": "Run"
+  },
+  {
+    "id": 20617008834,
+    "name": "Abendlauf",
+    "date": "2025-10-14",
+    "distance": 2.04,
+    "duration": 760,
+    "type": "Run"
+  },
+  {
+    "id": 20617008813,
+    "name": "Abendlauf",
+    "date": "2025-10-14",
+    "distance": 2.07,
+    "duration": 667,
+    "type": "Run"
+  },
+  {
+    "id": 20617008805,
+    "name": "Lauf am Morgen",
+    "date": "2025-10-14",
+    "distance": 2.81,
+    "duration": 983,
+    "type": "Run"
+  },
+  {
+    "id": 20617008936,
+    "name": "Mittagslauf",
+    "date": "2025-10-11",
+    "distance": 20.29,
+    "duration": 8198,
+    "type": "Run"
+  },
+  {
+    "id": 20617008650,
+    "name": "Lauf am Morgen",
+    "date": "2025-08-23",
+    "distance": 5.42,
+    "duration": 1950,
+    "type": "Run"
+  },
+  {
+    "id": 20617008605,
+    "name": "Lauf am Morgen",
+    "date": "2025-07-29",
+    "distance": 4.0,
+    "duration": 1462,
+    "type": "Run"
+  },
+  {
+    "id": 20617008604,
+    "name": "Mittagslauf",
+    "date": "2025-07-05",
+    "distance": 7.49,
+    "duration": 2686,
+    "type": "Run"
+  },
+  {
+    "id": 20617008625,
+    "name": "Lauf am Morgen",
+    "date": "2025-06-26",
+    "distance": 5.2,
+    "duration": 1880,
+    "type": "Run"
+  },
+  {
+    "id": 20616990581,
+    "name": "Lauf am Morgen",
+    "date": "2025-06-24",
+    "distance": 6.02,
+    "duration": 1984,
+    "type": "Run"
+  },
+  {
+    "id": 20616990661,
+    "name": "Lauf am Nachmittag",
+    "date": "2025-06-08",
+    "distance": 1.33,
+    "duration": 420,
+    "type": "Run"
+  },
+  {
+    "id": 20616990586,
+    "name": "Mittagslauf",
+    "date": "2025-05-17",
+    "distance": 6.24,
+    "duration": 2320,
+    "type": "Run"
+  },
+  {
+    "id": 20616990579,
+    "name": "Abendlauf",
+    "date": "2025-05-10",
+    "distance": 4.55,
+    "duration": 1594,
+    "type": "Run"
+  },
+  {
+    "id": 20616990326,
+    "name": "Abendlauf",
+    "date": "2025-04-26",
+    "distance": 3.86,
+    "duration": 1557,
+    "type": "Run"
+  },
+  {
+    "id": 20616990366,
+    "name": "Lauf am Nachmittag",
+    "date": "2025-04-12",
+    "distance": 12.48,
+    "duration": 4771,
+    "type": "Run"
+  },
+  {
+    "id": 20616990350,
+    "name": "Lauf am Nachmittag",
+    "date": "2025-03-19",
+    "distance": 3.54,
+    "duration": 1328,
+    "type": "Run"
+  },
+  {
+    "id": 20616990410,
+    "name": "Lauf am Nachmittag",
+    "date": "2025-03-09",
+    "distance": 25.46,
+    "duration": 12176,
+    "type": "Run"
+  },
+  {
+    "id": 20616990216,
+    "name": "Lauf am Nachmittag",
+    "date": "2025-03-05",
+    "distance": 11.55,
+    "duration": 4498,
+    "type": "Run"
+  },
+  {
+    "id": 20616990214,
+    "name": "Lauf am Nachmittag",
+    "date": "2025-03-03",
+    "distance": 11.88,
+    "duration": 4716,
+    "type": "Run"
+  },
+  {
+    "id": 20616990126,
+    "name": "Abendlauf",
+    "date": "2025-02-26",
+    "distance": 5.23,
+    "duration": 2091,
+    "type": "Run"
+  },
+  {
+    "id": 20616990121,
+    "name": "Lauf am Morgen",
+    "date": "2024-12-21",
+    "distance": 1.17,
+    "duration": 380,
+    "type": "Run"
+  },
+  {
+    "id": 20616990186,
+    "name": "Lauf am Nachmittag",
+    "date": "2024-11-16",
+    "distance": 6.0,
+    "duration": 2079,
+    "type": "Run"
+  },
+  {
+    "id": 20616971202,
+    "name": "Halbmarathon Lausanne",
+    "date": "2024-10-27",
+    "distance": 21.17,
+    "duration": 8099,
+    "type": "Run"
+  },
+  {
+    "id": 20616971158,
+    "name": "Abendlauf",
+    "date": "2024-10-08",
+    "distance": 4.2,
+    "duration": 1430,
+    "type": "Run"
+  },
+  {
+    "id": 20616971161,
+    "name": "Mittagslauf",
+    "date": "2024-08-31",
+    "distance": 5.06,
+    "duration": 2117,
+    "type": "Run"
+  },
+  {
+    "id": 20616971137,
+    "name": "Mittagslauf",
+    "date": "2024-08-29",
+    "distance": 4.39,
+    "duration": 1800,
+    "type": "Run"
+  },
+  {
+    "id": 20616971000,
+    "name": "Lauf am Morgen",
+    "date": "2024-08-28",
+    "distance": 4.45,
+    "duration": 1431,
+    "type": "Run"
+  },
+  {
+    "id": 20616970968,
+    "name": "Lauf am Morgen",
+    "date": "2024-08-27",
+    "distance": 5.01,
+    "duration": 1832,
+    "type": "Run"
+  },
+  {
+    "id": 20616970983,
+    "name": "Lauf am Morgen",
+    "date": "2024-08-02",
+    "distance": 3.1,
+    "duration": 1150,
+    "type": "Run"
+  },
+  {
+    "id": 20616970990,
+    "name": "Lauf am Nachmittag",
+    "date": "2024-07-08",
+    "distance": 7.23,
+    "duration": 2782,
+    "type": "Run"
+  },
+  {
+    "id": 20616970980,
+    "name": "Abendlauf",
+    "date": "2024-07-07",
+    "distance": 5.67,
+    "duration": 2168,
+    "type": "Run"
+  },
+  {
+    "id": 20616942458,
+    "name": "Abendlauf",
+    "date": "2024-06-30",
+    "distance": 6.12,
+    "duration": 2251,
     "type": "Run"
   }
 ]
