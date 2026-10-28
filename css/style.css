@@ -391,3 +391,10 @@ textarea:focus-visible {
     padding: 24px;
   }
 }
+
+/* Diagrammgrösse */
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
