@@ -124,7 +124,7 @@ function createDistanceChart(runs) {
   });
 }
 
-function diyplayAllRuns(runs) {
+function displayAllRuns(runs) {
   const container = document.getElementById("all-runs-list");
 
   // Bisherigen Inhalt entfernen
